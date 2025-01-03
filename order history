@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History - Farmer Direct</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">Farmer Direct</h1>
+            <nav>
+                <a href="profile.html" class="text-white hover:underline">Back to Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order History Section -->
+    <section class="py-12">
+        <div class="container mx-auto max-w-5xl bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center mb-6">Order History</h2>
+
+            <!-- Order Cards -->
+            <div class="space-y-6">
+                <!-- Order Item -->
+                <div class="p-6 bg-gray-50 border rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-xl font-semibold">Order #12345</h3>
+                            <p class="text-gray-600">Placed on: Jan 1, 2025</p>
+                            <p class="text-gray-600">Status: <span class="text-green-500 font-medium">Delivered</span></p>
+                        </div>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-400">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Order Item -->
+                <div class="p-6 bg-gray-50 border rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-xl font-semibold">Order #12344</h3>
+                            <p class="text-gray-600">Placed on: Dec 25, 2024</p>
+                            <p class="text-gray-600">Status: <span class="text-yellow-500 font-medium">Processing</span></p>
+                        </div>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-400">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Order Item -->
+                <div class="p-6 bg-gray-50 border rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-xl font-semibold">Order #12343</h3>
+                            <p class="text-gray-600">Placed on: Dec 15, 2024</p>
+                            <p class="text-gray-600">Status: <span class="text-red-500 font-medium">Cancelled</span></p>
+                        </div>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-400">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Farmer Direct. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
