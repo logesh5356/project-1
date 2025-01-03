@@ -75,56 +75,66 @@
             <h3 class="text-3xl font-bold text-center mb-8 fade-in">Our Featured Products</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <!-- Product Cards -->
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Fresh Apples" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Fresh Apples</h4>
                     <p class="text-gray-600 mb-2">₹150 / kg</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Organic Carrots" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Organic Carrots</h4>
                     <p class="text-gray-600 mb-2">₹120 / kg</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Free-Range Eggs" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Free-Range Eggs</h4>
                     <p class="text-gray-600 mb-2">₹180 / dozen</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Fresh Tomatoes" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Fresh Tomatoes</h4>
                     <p class="text-gray-600 mb-2">₹50 / kg</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Organic Milk" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Organic Milk</h4>
                     <p class="text-gray-600 mb-2">₹60 / litre</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Fresh Spinach" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Fresh Spinach</h4>
                     <p class="text-gray-600 mb-2">₹40 / bunch</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Brown Rice" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Brown Rice</h4>
                     <p class="text-gray-600 mb-2">₹70 / kg</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Desi Ghee" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Desi Ghee</h4>
                     <p class="text-gray-600 mb-2">₹500 / litre</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Raw Honey" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Raw Honey</h4>
                     <p class="text-gray-600 mb-2">₹400 / 500g</p>
-                </div>
+                </div></a>
+                <a href="severdownpage.html">
                 <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <img src="https://via.placeholder.com/150" alt="Fresh Potatoes" class="w-full h-24 object-cover mb-2 rounded">
                     <h4 class="text-lg font-semibold">Fresh Potatoes</h4>
                     <p class="text-gray-600 mb-2">₹30 / kg</p>
-                </div>
+                </div></a>
             </div>
         </div>
     </section>
