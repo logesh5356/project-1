@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Direct - Fresh From the Farm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-700 text-white">
+        <div class="container mx-auto flex justify-between items-center py-5 px-6">
+            <h1 class="text-4xl font-extrabold">Farmer Direct</h1>
+            <nav class="flex space-x-8 items-center">
+                <!-- Search Bar -->
+                <input type="text" placeholder="Search..." class="px-4 py-2 border rounded-lg w-32">
+
+                <!-- Start Selling Button (Seller button) -->
+                <a href="sellerid.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition duration-200">
+                    Start Selling
+                </a>
+
+                <!-- Login Button -->
+                <a href="only loginpage.html" class="bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition duration-200">Login</a>
+
+                <!-- Profile Button -->
+                <a href="profile.html" class="ml-4 bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition duration-200 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4.992 4.992 0 015 16a5 5 0 015-5h4a5 5 0 015 5c0 .38-.043.745-.121 1.104M12 14v1m0-1v1m6.121-5.804A4.992 4.992 0 0119 8a5 5 0 10-10 0 4.992 4.992 0 011.121 1.196M12 14v1" />
+                    </svg>
+                    Profile
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto flex flex-col justify-center items-center h-full text-center relative z-10">
+            <h2 class="text-6xl font-extrabold text-white mb-6">Fresh From the Farm</h2>
+            <p class="text-2xl text-gray-200">Connecting farmers to customers, delivering freshness to your door.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-10">Why Choose Farmer Direct?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fresh Produce" class="mx-auto mb-6">
+                    <h4 class="text-2xl font-semibold mb-4">Farm-Fresh Produce</h4>
+                    <p class="text-gray-600">Enjoy high-quality fruits, vegetables, and more directly from farmers.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fair Pricing" class="mx-auto mb-6">
+                    <h4 class="text-2xl font-semibold mb-4">Fair Pricing</h4>
+                    <p class="text-gray-600">Affordable prices for customers, fair earnings for farmers.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Sustainability" class="mx-auto mb-6">
+                    <h4 class="text-2xl font-semibold mb-4">Sustainable Practices</h4>
+                    <p class="text-gray-600">Support environmentally friendly and ethical farming methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-10">Our Featured Products</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
+                    <h4 class="text-2xl font-semibold mb-2">Fresh Apples</h4>
+                    <p class="text-gray-700 mb-4">$2.99 / kg</p>
+                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
+                    <h4 class="text-2xl font-semibold mb-2">Organic Carrots</h4>
+                    <p class="text-gray-700 mb-4">$1.99 / kg</p>
+                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
+                    <h4 class="text-2xl font-semibold mb-2">Free-Range Eggs</h4>
+                    <p class="text-gray-700 mb-4">$3.49 / dozen</p>
+                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
+            <p class="text-gray-300 mb-8">Have questions or need assistance? We're here to help!</p>
+            <a href="contact.html" class="bg-green-500 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-green-400 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Farmer Direct. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
