@@ -5,25 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmer Direct - Fresh From the Farm</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-green-500 to-green-700 text-white">
+    <header class="bg-gradient-to-r from-green-500 to-green-700 text-white fade-in">
         <div class="container mx-auto flex justify-between items-center py-5 px-6">
             <h1 class="text-4xl font-extrabold">Farmer Direct</h1>
             <nav class="flex space-x-8 items-center">
-                <!-- Search Bar -->
-                <input type="text" placeholder="Search..." class="px-4 py-2 border rounded-lg w-32">
-
-                <!-- Start Selling Button (Seller button) -->
-                <a href="sellerid.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition duration-200">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-3 top-2.5 h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zm6.354-4.646a7.5 7.5 0 11-1.708-1.708l3.85 3.85a1 1 0 01-1.414 1.414l-3.85-3.85z" clip-rule="evenodd" />
+                    </svg>
+                    <input 
+                        type="text" 
+                        placeholder="Search for products..." 
+                        class="pl-10 pr-4 py-2 w-full max-w-xs text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                    />
+                </div>
+                <a href="seller details.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300">
                     Start Selling
                 </a>
-
-                <!-- Login Button -->
-                <a href="only loginpage.html" class="bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition duration-200">Login</a>
-
+                <a href="loginpage.html" class="bg-white text-green-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition duration-300">
+                    Login
+                </a>
                 <!-- Profile Button -->
                 <a href="profile.html" class="ml-4 bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition duration-200 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,86 +61,78 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com');">
+    <section class="relative bg-cover bg-center h-72" style="background-image: url('https://via.placeholder.com');">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="container mx-auto flex flex-col justify-center items-center h-full text-center relative z-10">
-            <h2 class="text-6xl font-extrabold text-white mb-6">Fresh From the Farm</h2>
-            <p class="text-2xl text-gray-200">Connecting farmers to customers, delivering freshness to your door.</p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-16 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-10">Why Choose Farmer Direct?</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Feature 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/150" alt="Fresh Produce" class="mx-auto mb-6">
-                    <h4 class="text-2xl font-semibold mb-4">Farm-Fresh Produce</h4>
-                    <p class="text-gray-600">Enjoy high-quality fruits, vegetables, and more directly from farmers.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/150" alt="Fair Pricing" class="mx-auto mb-6">
-                    <h4 class="text-2xl font-semibold mb-4">Fair Pricing</h4>
-                    <p class="text-gray-600">Affordable prices for customers, fair earnings for farmers.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/150" alt="Sustainability" class="mx-auto mb-6">
-                    <h4 class="text-2xl font-semibold mb-4">Sustainable Practices</h4>
-                    <p class="text-gray-600">Support environmentally friendly and ethical farming methods.</p>
-                </div>
-            </div>
+            <h2 class="text-4xl font-extrabold text-white mb-4 fade-in">Fresh From the Farm</h2>
+            <p class="text-lg text-gray-200 fade-in">Connecting farmers to customers, delivering freshness to your door.</p>
         </div>
     </section>
 
     <!-- Featured Products Section -->
-    <section id="products" class="py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+    <section id="products" class="py-12 bg-gray-50">
         <div class="container mx-auto">
-            <h3 class="text-4xl font-bold text-center mb-10">Our Featured Products</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
-                    <h4 class="text-2xl font-semibold mb-2">Fresh Apples</h4>
-                    <p class="text-gray-700 mb-4">$2.99 / kg</p>
-                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+            <h3 class="text-3xl font-bold text-center mb-8 fade-in">Our Featured Products</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Product Cards -->
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fresh Apples" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Fresh Apples</h4>
+                    <p class="text-gray-600 mb-2">₹150 / kg</p>
                 </div>
-                <!-- Product 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
-                    <h4 class="text-2xl font-semibold mb-2">Organic Carrots</h4>
-                    <p class="text-gray-700 mb-4">$1.99 / kg</p>
-                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Organic Carrots" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Organic Carrots</h4>
+                    <p class="text-gray-600 mb-2">₹120 / kg</p>
                 </div>
-                <!-- Product 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full h-48 object-cover mb-6">
-                    <h4 class="text-2xl font-semibold mb-2">Free-Range Eggs</h4>
-                    <p class="text-gray-700 mb-4">$3.49 / dozen</p>
-                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400 transition duration-200">Buy Now</a>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Free-Range Eggs" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Free-Range Eggs</h4>
+                    <p class="text-gray-600 mb-2">₹180 / dozen</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fresh Tomatoes" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Fresh Tomatoes</h4>
+                    <p class="text-gray-600 mb-2">₹50 / kg</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Organic Milk" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Organic Milk</h4>
+                    <p class="text-gray-600 mb-2">₹60 / litre</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fresh Spinach" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Fresh Spinach</h4>
+                    <p class="text-gray-600 mb-2">₹40 / bunch</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Brown Rice" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Brown Rice</h4>
+                    <p class="text-gray-600 mb-2">₹70 / kg</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Desi Ghee" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Desi Ghee</h4>
+                    <p class="text-gray-600 mb-2">₹500 / litre</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Raw Honey" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Raw Honey</h4>
+                    <p class="text-gray-600 mb-2">₹400 / 500g</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://via.placeholder.com/150" alt="Fresh Potatoes" class="w-full h-24 object-cover mb-2 rounded">
+                    <h4 class="text-lg font-semibold">Fresh Potatoes</h4>
+                    <p class="text-gray-600 mb-2">₹30 / kg</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800 text-white">
-        <div class="container mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
-            <p class="text-gray-300 mb-8">Have questions or need assistance? We're here to help!</p>
-            <a href="contact.html" class="bg-green-500 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-green-400 transition duration-300">
-                Contact Us
-            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>© 2025 Farmer Direct. All rights reserved.</p>
+            <p class="fade-in">© 2025 Farmer Direct. All rights reserved.</p>
         </div>
     </footer>
 
