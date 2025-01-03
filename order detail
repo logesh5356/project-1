@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - Farmer Direct</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">Farmer Direct</h1>
+        </div>
+    </header>
+
+    <!-- Order Details Section -->
+    <section class="py-12">
+        <div class="container mx-auto max-w-3xl bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center mb-6">Order Details</h2>
+            <form class="space-y-6">
+                <!-- Personal Information -->
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Full Name</label>
+                    <input id="name" type="text" placeholder="Enter your full name"
+                        class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email"
+                        class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Phone Number</label>
+                    <input id="phone" type="text" placeholder="Enter your phone number"
+                        class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+
+                <!-- Shipping Address -->
+                <div>
+                    <label for="address" class="block text-lg font-medium text-gray-700">Address</label>
+                    <input id="address" type="text" placeholder="Enter your shipping address"
+                        class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="city" class="block text-lg font-medium text-gray-700">City</label>
+                        <input id="city" type="text" placeholder="City"
+                            class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="state" class="block text-lg font-medium text-gray-700">State</label>
+                        <input id="state" type="text" placeholder="State"
+                            class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="postal" class="block text-lg font-medium text-gray-700">Postal Code</label>
+                        <input id="postal" type="text" placeholder="Postal Code"
+                            class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="country" class="block text-lg font-medium text-gray-700">Country</label>
+                        <input id="country" type="text" placeholder="Country"
+                            class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                </div>
+
+                <!-- Additional Notes -->
+                <div>
+                    <label for="notes" class="block text-lg font-medium text-gray-700">Additional Notes</label>
+                    <textarea id="notes" rows="4" placeholder="Any special instructions?"
+                        class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="w-full bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-400">
+                        Confirm Order
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Farmer Direct. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
